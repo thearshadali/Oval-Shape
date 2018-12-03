@@ -9,10 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var ovalView: OvalShapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        ovalView = OvalShapView(frame: view.bounds)
+        view.addSubview(ovalView)
     }
 
 
